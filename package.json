@@ -1,0 +1,26 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "Mock Amazon-like storefront CLI application",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-flick/bamazon.git"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Justin Flick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j-flick/bamazon/issues"
+  },
+  "homepage": "https://github.com/j-flick/bamazon#readme",
+  "dependencies": {
+    "inquirer": "^4.0.0",
+    "mysql": "^2.15.0"
+  }
+}

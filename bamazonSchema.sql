@@ -26,4 +26,5 @@ VALUES
 	("Qwel & Maker - Beautiful Raw", "CDs and Vinyl", 14.99, 15),
 	("Xbox One X 1TB Console", "Video Games", 499.00, 35);
 
+
 SELECT * FROM products;

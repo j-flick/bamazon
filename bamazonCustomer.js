@@ -1,13 +1,15 @@
 // Require MySQL and Inquirer packages.
 var mysql = require("mysql");
 var inquirer = require("inquirer");
+// Require configuration file to hold passwords.
+var config = require("./config/password");
 
 // Setup the MySQL connection to use appropriate database.
 var connection = mysql.createConnection({
 	host: "localhost",
 	port: 3306,
 	user: "root",
-	password: "root",
+	password: config.password,
 	database: "bamazon"
 });
 

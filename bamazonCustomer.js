@@ -15,7 +15,10 @@ var connection = mysql.createConnection({
 
 connection.connect(function(err) {
 	if (err) throw err;
+	// Display items available.
 	displayItems();
+	// Use setTimeout so items are displayed before the question.
+	setTimeout(inquireUser, 2000);
 });
 
 // Function to display the items available for sale with their price and id.
@@ -29,4 +32,27 @@ function displayItems() {
 			console.log("------------------------------------------------------------");
 		}
 	});
+}
+
+var inquireUser = function() {
+	inquirer
+		// Prompt user for the product they want and quantity of the product.
+		.prompt([
+			{
+				type: "input",
+				message: "Enter the ID for the product you would like to buy.",
+				name: "getIdPrompt"
+			},
+
+			{
+				type: "input",
+				message: "How many units of this product would you like to buy?",
+				name: "getQuantityPrompt"
+			}
+		])
+		.then(answers => {
+			console.log(answers.getIdPrompt);
+			console.log(answers.getQuantityPrompt);
+		})
+	; // End inquirer.
 }

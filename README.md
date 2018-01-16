@@ -16,33 +16,25 @@ Simply run `node bamazonCustomer.js` in the terminal to start the program.
 
 A list of items for sale are displayed, including their product ID, name, and price.  
 
-<p align="center">
-	**Screenshot #1 - Product Display**  
-  <img src="screenshots/bamazon-ss1.png" width="75%" title="Screenshot displaying products">
-</p>
+**Screenshot #1 - Product Display**<br />  
+![Screenshot displaying products](screenshots/bamazon-ss1.png)
 
 An `inquirer` prompt message gets the ID of the product the user would like to buy and how many units of the product they need.  
 
-<p align="center">
-	**Screenshot #2 - `inquirer` Prompt**  
-  <img src="screenshots/bamazon-ss2.png" width="75%" title="Screenshot displaying inquirer prompt message">
-</p>
+**Screenshot #2 - `inquirer` Prompt**<br />  
+![Screenshot displaying inquirer prompt message](screenshots/bamazon-ss2.png)
 
 When an order is placed, the application checks to see if the store has enough of the product to meet the customer's request.
 
 If not, a message is displayed informing the customer there are not enough items in stock. In the case below, the store only has 35 Xbox One X 1TB Consoles in stock, but the user tried to order 100.  
 
-<p align="center">
-	**Screenshot #3 - Insufficient Quantity**  
-  <img src="screenshots/bamazon-ss3.png" width="75%" title="Screenshot displaying insufficient quantity message">
-</p>
+**Screenshot #3 - Insufficient Quantity**<br />  
+![Screenshot displaying insufficient quantity message](screenshots/bamazon-ss3.png)
 
 If there are enough items in stock, the SQL database is updated to reflect the remaining quantity and the customer is shown the total cost of their purchase.  
 
-<p align="center">
-	**Screenshot #4 - SQL Database Updated**  
-  <img src="screenshots/bamazon-db-ss1.png" width="75%" title="Screenshot displaying updated SQL database">
-</p>
+**Screenshot #4 - SQL Database Updated**<br />  
+![Screenshot displaying updated SQL database](screenshots/bamazon-db-ss1.png)
 
 ## Authors
 * **Justin Flick** - *Everything*
